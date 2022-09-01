@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="form.css">
+
+
+
+  </head>
+<body>
+<nav>
+    <div class="menu">
+      <div class="harm">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+        <p class="ele">Elecastle</p>
+      </div>
+      <div class="list">
+        <p class="actt">Active : #0.00</p>
+        <hr color="white">
+        <ul>
+          <li class="home"><a href="#" class="you">Home</a></li>
+          <li class="home"><a href="#" class="you">Dashboard</a></li>
+          <li class="home"><a href="#" class="you">Fund Wallet</a></li>
+          <li class="home"><a href="#" class="you">Our Services</a></li>
+          <li class="home"><a href="#" class="you">About This Business</a></li>
+          <li class="home"><a href="#" class="you">Referal Link</a></li>
+          <li class="home"><a href="#" class="you">API Doc</a></li>
+          <li class="home"><a href="#" class="you">Logout</a></li>
+          
+        </ul>
+        <hr color="white"> 
+      </div>
+      
+        <div class="cont">
+            <p class="active">Active: #0.00</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi2 bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+        </div>
+   
+</nav>
+<!--section begins-->
+<section class="rool">
+    <div class="pro">
+        <p class="ugochi">Welcome to your profile </p>
+      <p class="por">  Ugochi Udeagha <a href="#"><input type="button" value="Verify KYC" class="ky"></a></p>
+    </div>
+    <div class="ue">
+        <p class="use">Username: <br>
+        <span class="ugo">Ugobabby </span> </p>
+    <p class="net">Active Wallet: <br>
+      <span class="mo">#0.00</span> </p>  
+    </div>
+    <div class="pos">
+      <p class="em">
+     <span class="email">email: </span>
+        <span class="ema">udeaghaugochi20@gmail.com</span>
+      </p>
+      <p class="emm">User Id: <br>
+      <span class="nu">10120</span></p>
+    </div>
+</section>
+<!--section ends-->
+
+
+
+
+
+
+<script>
+
+let harm = document.querySelector('.harm')
+let list = document.querySelector('.list')
+
+
+harm.addEventListener('click', function(){
+  harm.classList.toggle('active');
+  list.classList.toggle('active');
+})
+document.querySelectorAll('.home').forEach(n => n.addEventListener('click', () => {
+  harm.classList.remove('active');
+  list.classList.remove('active');
+}))
+
+</script>
+</body>
+</html>
